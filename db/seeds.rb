@@ -6,15 +6,8 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-u = User.new
-u.email = "tuhwolf@gmail.com"           # 可以改成自己的 email
-
-u.password = "112233"                # 最少要六码
-
-u.password_confirmation = "112233"   # 最少要六码
-
-u.is_admin = true
-u.save
+User.create(email: "test@gmail.com", password: "123456", password_confirmation: "123456", is_admin: false)
+User.create(email: "admin@gmail.com", password: "123456", password_confirmation: "123456", is_admin: true)
 
 Category.create(name: "仿古摆件")
 Category.create(name: "高档茶具")
