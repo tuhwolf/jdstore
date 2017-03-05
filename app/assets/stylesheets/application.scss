@@ -17,6 +17,7 @@
  @import "bootstrap-sprockets";
  @import "bootstrap";
  @import "font-awesome";
+ @import url(http://fonts.googleapis.com/css?family=Roboto);
 
 
  .jumbotron {
@@ -75,7 +76,6 @@
      margin-top: 60px;
  }
 
- @import url(http://fonts.googleapis.com/css?family=Roboto);
 
  /****** LOGIN MODAL ******/
  .loginmodal-container {
@@ -171,7 +171,7 @@
 .login-help {
   font-size: 12px;
 }
-   
+
 
  body {
     min-height: 100%;
@@ -220,13 +220,13 @@
          display: none;
        }
      }
-     .login {
-       border: 1px solid #fff;
-       margin-top: 12px;
-       padding: 3px 17px 3px 17px;
-       margin-right: 130px;
-       border-radius: 15px;
-     }
+    //  .login {
+    //    border: 1px solid #fff;
+    //    margin-top: 12px;
+    //    padding: 3px 17px 3px 17px;
+    //    margin-right: 130px;
+    //    border-radius: 15px;
+    //  }
 
   }
 
