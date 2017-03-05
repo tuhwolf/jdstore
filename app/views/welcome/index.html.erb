@@ -50,11 +50,11 @@
            <div class="container">
                <div class="row">
                    <!-- Slide Text Layer -->
-                   <div class="slide-text slide_style_left">
+                   <div class="slide-text slide_style_center">
                        <h1 data-animation="animated zoomInRight">青花瓷</h1>
                        <p data-animation="animated fadeInLeft">每一件青花瓷都是一件艺术品 </p>
-                       <a href="http://bootstrapthemes.co/" target="_blank" class="btn btn-default" data-animation="animated fadeInLeft">加入购物车</a>
-                       <a href="http://bootstrapthemes.co/" target="_blank"  class="btn btn-primary" data-animation="animated fadeInRight">加入收藏</a>
+                       <%= link_to("进入展厅", products_path, target:"_blank", class: "btn btn-default") %>
+                       <%= link_to("成为会员", new_user_registration_path, target:"_blank", class: "btn btn-primary") %>
                    </div>
                </div>
            </div>
@@ -68,11 +68,11 @@
            <img src="http://www.xincha.com/pic/1?src=http://mmbiz.qpic.cn/mmbiz_png/7sPjKhylBAoyftdiazvzHlEeQDf8IvmzqGsU0mWbJm1fe3baouhwFLeSkh9aARl1aQlXjUE75rYt8A1n4DgYhdg/0?wx_fmt=png" alt="Bootstrap Touch Slider"  class="slide-image"/>
            <div class="bs-slider-overlay"></div>
            <!-- Slide Text Layer -->
-           <div class="slide-text slide_style_center">
+           <div class="slide-text slide_style_left">
                <h1 data-animation="animated flipInX">紫砂壶</h1>
                <p data-animation="animated lightSpeedIn">享受一份逍遥自在 </p>
-               <a href="http://bootstrapthemes.co/" target="_blank" class="btn btn-default" data-animation="animated fadeInUp">加入购物车</a>
-               <a href="http://bootstrapthemes.co/" target="_blank"  class="btn btn-primary" data-animation="animated fadeInDown">加入收藏</a>
+               <%= link_to("进入展厅", products_path, target:"_blank", class: "btn btn-default") %>
+               <%= link_to("成为会员", new_user_registration_path, target:"_blank", class: "btn btn-primary") %>
            </div>
        </div>
        <!-- End of Slide -->
@@ -87,8 +87,8 @@
            <div class="slide-text slide_style_right">
                <h1 data-animation="animated zoomInLeft">黄釉瓷</h1>
                <p data-animation="animated fadeInRight">一份色彩就是一份精彩 </p>
-               <a href="http://bootstrapthemes.co/" target="_blank" class="btn btn-default" data-animation="animated fadeInLeft">加入购物车</a>
-               <a href="http://bootstrapthemes.co/" target="_blank" class="btn btn-primary" data-animation="animated fadeInRight">加入收藏</a>
+               <%= link_to("进入展厅", products_path, target:"_blank", class: "btn btn-default") %>
+               <%= link_to("成为会员", new_user_registration_path, target:"_blank", class: "btn btn-primary") %>
            </div>
        </div>
        <!-- End of Slide -->
@@ -116,6 +116,49 @@
  <div style="text-align: center;margin-top: 150px; margin-bottom:100px"><h3>Check this in <a href="http://bootsnipp.com/fullscreen/Padax"target="_blank"> Full Screen Preview </a> And Drag the Slider ;)</h3> / Fade slide Also <a href="http://bootsnipp.com/snippets/OR9l8"target="_blank">  Available here </a></div>
  <div style="text-align: center;margin-top: 150px; margin-bottom:100px"> | <a href="http://bootstrapthemes.co/item/bootstrap-carousel-touch-slider-with-text-animation/"target="_blank"> Snippet By Bootstrapthemes.co </a> |</div>
 -->
+
+<div id="service" class="row">
+  <div class="module-name decorative">
+    <i></i><span>把玩工艺，品味文化</span><i></i>
+  </div>
+  <div class="feedback-1">
+    <div class="col-md-4 text-center">
+      <h4 class="feedback-info">
+        <p>丝绸之路上</p>
+        <p>因文化交汇而产生</p>
+        <p>来自中东的颜料</p>
+        <p>中国瓷器的工艺</p>
+        <p>在匠人们的手中</p>
+        <p>创造出青花瓷</p>
+      </h4>
+    </div>
+    <div class="col-md-8 text-center">
+      <p>
+        <%= image_tag("https://ww2.sinaimg.cn/large/006tNc79gy1fdc8zo00czj31jo0z07wj.jpg")%>
+      </p>
+    </div>
+    <div class="feedback-2">
+      <div class="col-md-8 text-center">
+        <p>
+          <%= image_tag("https://ww2.sinaimg.cn/large/006tNc79gy1fdc90hhcnpj31kw0w0b2b.jpg")%>
+        </p>
+      </div>
+      <div class="col-md-4 text-center">
+        <h4 class="feedback-info">
+          <p>大航海时代</p>
+          <p>因贸易而繁盛</p>
+          <p>来自欧洲的订单</p>
+          <p>和新世界的开发</p>
+          <p>中国的匠人们</p>
+          <p>给世界带来更多的美</p>
+        </h4>
+
+      </div>
+    </div>
+  </div>
+
+</div>
+
  <!-- Script to Activate the Carousel -->
 <script>
     $('.carousel').carousel({

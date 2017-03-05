@@ -353,3 +353,81 @@
     }
 
 }
+
+
+
+
+/* module and text */
+#service, #hot-products{
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+
+.module-name {
+    margin-top: 45px;
+    margin-bottom: 45px;
+    color: rgba(0, 0, 0, 0.5);
+    text-align: center;
+    font-size: 0;
+}
+
+.module-name.decorative i {
+    display: inline-block;
+    vertical-align: middle;
+    width: 95px;
+    height: 2px;
+    background: rgba(0, 0, 0, 0.5);
+    margin-right: 20px;
+}
+
+.module-name.decorative span {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 18px;
+}
+
+.module-name.decorative span+i {
+    margin-right: 0;
+    margin-left: 18px;
+}
+
+
+/* our service */
+
+#service, #customer-feedback {
+  padding-bottom: 50px;
+  background-color: #fff;
+  padding-top: 20px;
+  .col-md-4 {
+    padding: 15px 10px;
+    .quote-box-1 {
+      padding: 30px 30px;
+      background-color: #faf6ec;
+      //color: #aaa;
+      font-weight: 200;
+    }
+  }
+}
+
+.feedback-info.col-md-4 h4 {
+    margin-top: 50px;
+    font-weight: 200;
+}
+
+/* customer-feedback */
+
+#service {
+  .feedback-1 img, .feedback-2 img, .feedback-3 img {
+    width: 100%;
+    height: auto;
+  }
+  .col-md-6 {
+    height: 328px;
+    margin-bottom: 20px;
+    h4.feedback-info {
+      margin-top: 50px;
+      font-weight: 200;
+      //color: #aaa;
+    }
+  }
+}
