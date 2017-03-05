@@ -1,3 +1,18 @@
-<div class="row">
-  <%= render :partial => "product_items", :collection => @products, :as => :product %>
+<div class="products-1">
+  <%= render "common/flashes" %>
+
+  <div class="filter">
+    <span><%= link_to("价钱", products_path(:order => "by_price")) %><i class="fa fa-arrow-down" ></i></span>
+    <span><%= link_to("喜欢数量", products_path(:order => "by_fans")) %><i class="fa fa-arrow-down"></i></span>
+    <span><%= link_to("上架时间", products_path) %><i class="fa fa-arrow-down"></i></span>
+  </div>
+
+  <div class="row containai">
+    <%= render :partial => "product_items", :collection => @products, :as => :product %>
+  </div>
+
+  <p class=" text-center ending">
+    没有更多商品了
+  </p>
+
 </div>

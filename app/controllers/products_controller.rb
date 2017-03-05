@@ -2,7 +2,14 @@ class ProductsController < ApplicationController
   before_action :validate_search_key, only: [:search]
 
   def index
-    @products = Product.all
+    @products = case params[:order]
+      when 'by_price'
+          Product.all.order("price DESC")
+      when 'by_fans'
+        Product.all.sort_by {|product| product.fans.count}.reverse
+      else
+        Product.all.recent
+      end
   end
 
   def show
